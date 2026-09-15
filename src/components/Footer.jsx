@@ -1,6 +1,7 @@
 import swiggylogo2 from "../assets/swiggylogo2.png";
-import AppStore from "../assets/AppStore.png"
-import GooglePlay from "../assets/GooglePlay.png"
+import AppStore from "../assets/AppStore.png";
+import GooglePlay from "../assets/GooglePlay.png";
+
 import { Link } from "react-router-dom";
 
 

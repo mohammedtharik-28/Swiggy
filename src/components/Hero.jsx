@@ -1,5 +1,6 @@
 import food1 from '../assets/food1.png'
-import food2 from '../assets/food2.png'
+import instamart from '../assets/Instamart.png'
+import dineout from '../assets/Dineout.png'
 import useState from 'react'
 
 
@@ -46,7 +47,7 @@ function Hero() {
                     <h1 className="text-lg font-bold text-[#FF5200] text-[#FF5200]-200">UP TO 60% OFF</h1>
                     <div className="flex items-center justify-between mt-12 ">
                         <button className="bg-[#FF5200]  text-white w-12 h-12 rounded-full"><i className='fa-solid fa-arrow-right text-3xl'></i></button>
-                        <img src={food2} alt="food2" className="w-40 h-38 " />
+                        <img src={instamart} alt="food2" className="w-40 h-38 " />
                     </div>
                 </div>
                 <div className="bg-white p-7 w-90 h-80 rounded-4xl shadow-lg">
@@ -55,7 +56,7 @@ function Hero() {
                     <h1 className="text-lg font-bold text-[#FF5200] text-[#FF5200]-200">UP TO 50% OFF</h1>
                     <div className="flex items-center justify-between mt-12 ">
                         <button className="bg-[#FF5200]  text-white w-12 h-12 rounded-full"><i className='fa-solid fa-arrow-right text-3xl'></i></button>
-                        <img src={food1} alt="food1" className="w-40 h-38 " />
+                        <img src={dineout} alt="food1" className="w-40 h-38 " />
                     </div>
                 </div>
             </div>
