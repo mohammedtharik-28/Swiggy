@@ -1,7 +1,6 @@
 import food1 from '../assets/food1.png'
 import instamart from '../assets/Instamart.png'
 import dineout from '../assets/Dineout.png'
-import useState from 'react'
 
 
 

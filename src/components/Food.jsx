@@ -1,8 +1,6 @@
-import React, { useRef } from "react";
 import { useRef } from "react";
 
 import food1 from "../assets/food1.png";
-import food2 from "../assets/food2.png";
 
 import idli from "../assets/food/Idli.png";
 import vada from "../assets/food/Vada.png";
@@ -161,145 +159,120 @@ function Food() {
         {
             id: 1,
             name: "Fresh Vegetables",
-            img: food1
             img: freshVegetables
         },
         {
             id: 2,
             name: "Fresh Fruits",
-            img: food2
             img: freshFruits
         },
         {
             id: 3,
             name: "Dairy, Bread and Eggs",
-            img: food2
             img: breadAndMilk
         },
         {
             id: 4,
             name: "Rice, Atta and Dals",
-            img: food2
             img: riceAndAtta
         },
         {
             id: 5,
             name: "Masalas and Dry Fruits",
-            img: food2
             img: masala
         },
         {
             id: 6,
             name: "Oils and Ghee",
-            img: food2
             img: oilAndGhee
         },
         {
             id: 7,
             name: "Munchies",
-            img: food2
             img: munchies
         },
         {
             id: 8,
             name: "Sweet Tooth",
-            img: food2
             img: sweets
         },
         {
             id: 9,
             name: "Cold Drinks and Juices",
-            img: food2
             img: juices
         },
         {
             id: 10,
             name: "Biscuit and Cakes",
-            img: food2
             img: biscuits
         }, {
             id: 11,
             name: "Instant and Frozen Food",
-            img: food2
             img: frozen
         },
         {
             id: 12,
             name: "Meat and Seafood",
-            img: food2
             img: meat
         },
         {
             id: 13,
             name: "Cereals and Breakfast",
-            img: food2
             img: cereals
         },
         {
             id: 14,
             name: "Sauces and Spreads",
-            img: food2
             img: spreads
         },
         {
             id: 15,
             name: "Tea, Coffee and More",
-            img: food2
             img: tea
         },
         {
             id: 16,
             name: "Cleaning Essentials",
-            img: food2
             img: cleaners
         },
         {
             id: 17,
             name: "Pharma and Hygiene",
-            img: food2
             img: pharma
         },
         {
             id: 18,
             name: "Bath, Body and Hair",
-            img: food2
             img: hair
         },
         {
             id: 19,
             name: "Paan Corner",
-            img: food2
             img: paan
         },
         {
             id: 20,
             name: "Home and Kitchen",
-            img: food2
             img: home
         },
         {
             id: 21,
             name: "Office and Electricals",
-            img: food2
             img: office
         },
         {
             id: 22,
             name: "Baby Care",
-            img: food2
             img: baby
         },
         {
             id: 23,
             name: "Pet Supplies",
-            img: food2
             img: pet
         },
         {
-            id: 23,
             id: 24,
             name: "Beauty and Grooming",
-            img: food2
             img: beauty
         },
     ];
@@ -588,7 +561,6 @@ function Food() {
                                 className="
                                     w-[160px]
                                     h-[140px]
-                                    object-contain shadow-sm"
                                     object-contain shadow-xs rounded-full "
                             />
 
