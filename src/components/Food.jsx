@@ -546,21 +546,21 @@ function Food() {
             </div>
             <div ref={foodSliderRef} className="overflow-x-auto scrollbar-width-none   [&::-webkit-scrollbar]:hidden">
 
-                <div className="grid grid-rows-2 grid-flow-col auto-cols-[160px] gap-x-7 gap-y-8 w-full">
+                <div className="grid grid-rows-2 grid-flow-col auto-cols-40 gap-x-7 gap-y-8 w-full">
 
                     {foodItems.map((item) => (
                         <Link
                             key={item.id}
                             to={`/food/${item.id}`}
-                            className="w-[150px] text-center cursor-pointer"
+                            className="w-37.5 text-center cursor-pointer"
                         >
 
                             <img
                                 src={item.img}
                                 alt={item.name}
                                 className="
-                                    w-[160px]
-                                    h-[140px]
+                                    w-40
+                                    h-35
                                     object-contain shadow-xs rounded-full "
                             />
 
@@ -597,18 +597,18 @@ function Food() {
 
 
                 <div ref={groseriesSliderRef} className="overflow-x-auto scrollbar-width-none   [&::-webkit-scrollbar]:hidden">
-                    <div className="grid grid-rows-1 grid-flow-col auto-cols-[160px] gap-x-7  w-full">
+                    <div className="grid grid-rows-1 grid-flow-col auto-cols-40 gap-x-7  w-full">
 
                         {groseriesItems.map((grocery) => (
                             <Link
                                 key={grocery.id}
                                 to={`/groceries/${grocery.id}`}
-                                className="w-[150px] text-center cursor-pointer mt-10"
+                                className="w-37.5 text-center cursor-pointer mt-10"
                             >
                                 <img
                                     src={grocery.img}
                                     alt={grocery.name}
-                                    className="w-[150px] h-[180px]  object-contain bg-gray-100 rounded-md"
+                                    className="w-37.5 h-45  object-contain bg-gray-100 rounded-md"
                                 />
                                 <p className="text-center text-xl font-medium mt-3">{grocery.name}</p>
                             </Link>
@@ -630,10 +630,10 @@ function Food() {
                     <div className="flex gap-4 w-max">
                         {
                             DineoutItems.map((restaurant) => (
-                                <div key={restaurant.id} className="min-w-[340px] max-w-[340px] overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-xs">
-                                    <div className="relative h-[190px] w-full">
+                                <div key={restaurant.id} className="min-w-85 max-w-85 overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-xs">
+                                    <div className="relative h-47.5 w-full">
                                         <img src={food1} alt={restaurant.name} className="object-cover w-full h-full" />
-                                        <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black/40 to-transparent"></div>
+                                        <div className="absolute inset-x-0 bottom-0 h-20 bg-linear-to-t from-black/40 to-transparent"></div>
                                         <div className="absolute bottom-2 left-2 right-2 flex justify-between items-center">
                                             <h1 className="text-xl font-bold text-white">{restaurant.name}</h1>
                                             <div className="flex items-center gap-1 text-white">

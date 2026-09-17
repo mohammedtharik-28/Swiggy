@@ -36,17 +36,17 @@ function Partner() {
 
     return (
         <section className="w-full">
-            <div className="relative h-[420px] w-full overflow-hidden">
+            <div className="relative h-105 w-full overflow-hidden">
                 <img src={partner} alt="partner" className="absolute inset-0 h-full w-full object-cover" />
                 <div className="absolute inset-0 bg-black/60"></div>
-                <div className="relative z-10 mx-auto flex h-full max-w-[1160px] items-center justify-evenly px-28">
+                <div className="relative z-10 mx-auto flex h-full max-w-290 items-center justify-evenly px-28">
                     <div className="w-[48%] text-white">
-                        <img src={symbol} alt="symbol" className="mb-2 h-[60px] w-[50px] brightness-0 invert" />
+                        <img src={symbol} alt="symbol" className="mb-2 h-15 w-12.5 brightness-0 invert" />
                         <p className="text-sm font-semibold tracking-[2px]">
                             PARTNER WITH SWIGGY!
                         </p>
-                        <div className="mt-2 h-[3px] w-[85px] bg-[#FF5200]"></div>
-                        <h1 key={currentSlide} className="mt-5 max-w-[450px] text-4xl font-bold leading-tight">
+                        <div className="mt-2 h-0.75 w-21.25 bg-[#FF5200]"></div>
+                        <h1 key={currentSlide} className="mt-5 max-w-112.5 text-4xl font-bold leading-tight">
                             {slides[currentSlide].first}
                             <br />
                             {slides[currentSlide].second}
@@ -57,7 +57,7 @@ function Partner() {
                             <div className={`h-1 rounded-r-full transition-all duration-300 ${currentSlide === 2 ? "w-7 bg-white rounded-full" : "w-7 bg-gray-500"}`}></div>
                         </div>
                     </div>
-                    <div className="w-[380px] rounded-[22px] bg-white p-6 shadow-2xl">
+                    <div className="w-95 rounded-[22px] bg-white p-6 shadow-2xl">
                         <h1 className="text-2xl font-bold text-[#243B5A]">
                             Get Started
                         </h1>
@@ -74,11 +74,11 @@ function Partner() {
                                     onChange={(e) => setRestaurantId(e.target.value)}
                                     onFocus={() => setFocused(true)}
                                     onBlur={() => setFocused(false)}
-                                    className=" h-[55px] w-full rounded-[20px] border border-gray-300 px-6 mt-3 text-sm text-[#243B5A] outline-none focus:border-[#FF2000]"
+                                    className=" h-13.75 w-full rounded-[20px] border border-gray-300 px-6 mt-3 text-sm text-[#243B5A] outline-none focus:border-[#FF2000]"
                                 />
                                 <label
                                     className={`pointer-events-none absolute left-5 font-medium transition-all duration-300 ${focused || restaurantId
-                                            ? "-top-0  bg-white px-1 text-xs text-[#FF2000]"
+                                            ? "top-0  bg-white px-1 text-xs text-[#FF2000]"
                                             : "top-1/2 -translate-y-1/2 text-md text-gray-500"
                                         }`}>
                                         Enter Restaurant ID / Mobile number
@@ -87,7 +87,7 @@ function Partner() {
 
                             <button
                                 disabled={!restaurantId}
-                                className={`mt-8 h-[56px] w-full rounded-[6px] text-lg font-bold text-white transition ${restaurantId
+                                className={`mt-8 h-14 w-full rounded-md text-lg font-bold text-white transition ${restaurantId
                                         ? "cursor-pointer bg-[#FF2000] hover:bg-[#e61c00]"
                                         : "cursor-not-allowed bg-[#d1d2d6]"
                                     }`}>
@@ -103,7 +103,7 @@ function Partner() {
                     </div>
                 </div>
             </div>
-            <div className="relative z-20 ml-50 -mt-[30px] w-[500px] max-w-[90%] rounded-full border-1 border-white bg-[#f0f1f7] p-1 shadow-lg">
+            <div className="relative z-20 ml-50 -mt-7.5 w-125 max-w-[90%] rounded-full border border-white bg-[#f0f1f7] p-1 shadow-lg">
                 <div className="flex">
                     <button
                         onClick={() => setActiveTab("delivery")}
@@ -125,7 +125,7 @@ function Partner() {
                     </button>
                 </div>
             </div>
-            <section className="mx-auto max-w-[1160px] px-5 pb-16 pt-10">
+            <section className="mx-auto max-w-290 px-5 pb-16 pt-10">
                 <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
                     <div>
                         {activeTab === "delivery" ? (
@@ -136,12 +136,12 @@ function Partner() {
                                 <h2 className="text-xl font-bold text-[#243B5A]">
                                     Get your restaurant delivery-ready in 24hrs!
                                 </h2>
-                                <div className="mt-4 h-[4px] w-11 rounded-full bg-[#FF5200]"></div>
+                                <div className="mt-4 h-1 w-11 rounded-full bg-[#FF5200]"></div>
                                 <div className="mt-4 rounded-[18px] bg-[#f0f0f5] p-7">
                                     <div className="flex gap-5">
                                         <div className="flex flex-col items-center">
                                             <div className="h-3 w-3 rounded-full bg-[#6746E8]"></div>
-                                            <div className="h-13 w-[1px] bg-gray-300"></div>
+                                            <div className="h-13 w-px bg-gray-300"></div>
                                         </div>
                                         <div>
                                             <p className="text-xs font-medium text-gray-500">STEP 1</p>
@@ -153,7 +153,7 @@ function Partner() {
                                     <div className="flex gap-5">
                                         <div className="flex flex-col items-center">
                                             <div className="h-3 w-3 rounded-full bg-[#6746E8]"></div>
-                                            <div className="h-14 w-[1px] bg-gray-300"></div>
+                                            <div className="h-14 w-px bg-gray-300"></div>
                                         </div>
                                         <div>
                                             <p className="text-xs font-medium text-gray-500">STEP 2</p>
@@ -183,12 +183,12 @@ function Partner() {
                                 <h2 className="text-xl font-bold text-[#243B5A]">
                                     Get your restaurant discovered by millions of diners
                                 </h2>
-                                <div className="mt-4 h-[4px] w-11 rounded-full bg-[#FF5200]"></div>
+                                <div className="mt-4 h-1 w-11 rounded-full bg-[#FF5200]"></div>
                                 <div className="mt-4 rounded-[18px] bg-[#f0f0f5] p-5">
                                     <div className="flex gap-5">
                                         <div className="flex flex-col items-center">
                                             <div className="h-3 w-3 rounded-full bg-[#6746E8]"></div>
-                                            <div className="h-14 w-[1px] bg-gray-300"></div>
+                                            <div className="h-14 w-px bg-gray-300"></div>
                                         </div>
                                         <div>
                                             <p className="text-xs font-medium text-gray-500">STEP 1</p>
@@ -200,7 +200,7 @@ function Partner() {
                                     <div className="flex gap-5">
                                         <div className="flex flex-col items-center">
                                             <div className="h-3 w-3 rounded-full bg-[#6746E8]"></div>
-                                            <div className="h-14 w-[1px] bg-gray-300"></div>
+                                            <div className="h-14 w-px bg-gray-300"></div>
                                         </div>
                                         <div>
                                             <p className="text-xs font-medium text-gray-500">STEP 2</p>
@@ -220,7 +220,7 @@ function Partner() {
                                             </h3>
                                         </div>
                                     </div>
-                                    <button className="mt-8 h-[45px] w-full rounded-[15px] bg-[#FF5200] text-md font-bold text-white transition hover:bg-[#e64a00]">
+                                    <button className="mt-8 h-11.25 w-full rounded-[15px] bg-[#FF5200] text-md font-bold text-white transition hover:bg-[#e64a00]">
                                         Show interest, I want to list restaurant
                                     </button>
                                 </div>
